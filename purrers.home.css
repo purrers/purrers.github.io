@@ -4,6 +4,7 @@ body{
   background-color:rgb(0, 0, 0);
   
   color:rgb(255, 255, 255);
+  text-shadow: 1px 1px #130061;
   margin: 0;
   margin-right: 0px;
   margin-left: 0px;
@@ -31,30 +32,31 @@ h1{
 li {
 list-style: none;
 text-align: center;
-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
 }
 
 a:link{
-color:mediumpurple;
+color:rgb(16, 1, 48);
+text-shadow: 1px 1px #8b8b8b;
 background-color: transparent;
-text-decoration: none;
+text-decoration:none;
+
 }
 a:visited {
-  color: pink;
+  color:rgb(0, 0, 0);
   background-color: transparent;
   text-decoration: none;
 }
 a:hover {
-    color:lightseagreen;
+    color:rgb(38, 0, 143);
     background-color: transparent;
     text-decoration:solid;
   }
-  
-  a:active {
+a:active {
     color:teal;
     background-color: transparent;
     text-decoration:none;
-  }
+}
 
 /*LogRocketTOPNAV*/
 a{
@@ -88,9 +90,9 @@ ul{
 
   display: inline-flex;
   height: 100%;
-  color: var(--white);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px #8b8b8b;
   font-weight: 700;
   font-size: 20pt;
   margin-left: 1px;
@@ -118,7 +120,7 @@ ul{
   justify-content: center;
   height: 100%;
   padding: 1px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .menu a:hover{
   background-color: rgba(71, 71, 71, 0.082);
@@ -194,7 +196,7 @@ ul{
     }
   .menu a:hover{
       background-color: transparent;
-      color: rgb(190, 190, 190);
+      color: rgb(0, 16, 70);
     }
   .hamb{
       display: none;
@@ -241,9 +243,10 @@ ul{
     align-items: center;
     max-width: 100%;
     
+   
 
 
-    background-image: url(./docs/assetts/images/231015_AinsleaPics/7.BW-Purrers.jpg);
+    background-image: url(./docs/assetts/images/231015_AinsleaPics/BAND-WEB-3.jpg);
     background-repeat: no-repeat;
     background-attachment:scroll;
     background-size: cover;

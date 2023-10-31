@@ -4,6 +4,7 @@ body{
     background-color:rgb(0, 0, 0);
     
     color:rgb(255, 255, 255);
+    text-shadow: 1px 1px #130061;
     margin: 0;
     margin-right: 0px;
     margin-left: 0px;
@@ -35,17 +36,18 @@ body{
   }
   
   a:link{
-  color:mediumpurple;
+  color:rgb(16, 1, 48);
+  text-shadow: 1px 1px #8b8b8b;
   background-color: transparent;
   text-decoration: none;
   }
   a:visited {
-    color: pink;
+    color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
   }
   a:hover {
-      color:lightseagreen;
+      color:rgb(38, 0, 126);
       background-color: transparent;
       text-decoration:solid;
     }
@@ -118,10 +120,11 @@ body{
     justify-content: center;
     height: 100%;
     padding: 1px;
-    color: rgb(255, 255, 255);
+    color:rgb(16, 1, 48);
+  text-shadow: 1px 1px #8b8b8b;
   }
   .menu a:hover{
-    background-color: rgba(71, 71, 71, 0.082);
+    background-color: rgba(42, 0, 109, 0.082);
   }
   .nav{
     max-height: 0;
@@ -243,7 +246,7 @@ body{
       
   
   
-      background-image: url(./docs/assetts/images/231015_AinsleaPics/4.BW-Purrers.jpg);
+      background-image: url(./docs/assetts/images/231015_AinsleaPics/BAND-WEB-2.jpg);
       background-repeat: no-repeat;
       background-attachment:scroll;
       background-size: cover;
