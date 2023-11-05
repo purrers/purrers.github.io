@@ -1,0 +1,310 @@
+
+
+body{ 
+    background-color:rgb(10, 0, 27);
+    
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px #130061;
+    margin: 0;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    Overflow-x:scroll;
+    Overflow-y:scroll;
+  }
+  #page{
+    background-color: rgba(0, 0, 0, 0); 
+   
+    
+  }
+  hr{
+    width: 33%;
+  }
+  h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 29pt;
+    font-weight: bolder;
+    font-kerning: unset;
+  }
+  
+  li {
+  list-style: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  }
+  
+  a:link{
+  color:rgb(16, 1, 48);
+  text-shadow: 1px 1px #8b8b8b;
+  background-color: transparent;
+  text-decoration: none;
+  }
+  a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+      color:rgb(38, 0, 126);
+      background-color: transparent;
+      text-decoration:solid;
+    }
+    
+    a:active {
+      color:teal;
+      background-color: transparent;
+      text-decoration:none;
+    }
+  
+  /*LogRocketTOPNAV*/
+  a{
+    text-decoration: none;
+    
+  }
+  ul{
+    list-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20pt;
+    
+    
+  }
+  :root{
+    --white: #5a5a5a;
+    --black: #36383F;
+    --gray: #1d1d1d;
+  }
+  /* Header */
+  .header{
+    background-color:transparent;
+    position:fixed; 
+    top: 0;
+    width: 100%;
+    margin: 0%;
+   
+  }
+  /* Logo */
+  .logo{
+  
+    display: inline-flex;
+    height: 100%;
+    color: var(--white);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 20pt;
+    margin-left: 1px;
+    padding: 1px;
+    
+  }
+  /* Nav menu */
+  .nav{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height:fit-content;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+  }
+  .menu{
+    margin: 0%;
+    padding: 0%;
+  }
+  .menu a{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 1px;
+    color:rgb(16, 1, 48);
+  text-shadow: 1px 1px #8b8b8b;
+  }
+  .menu a:hover{
+    background-color: rgba(42, 0, 109, 0.082);
+  }
+  .nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+  }
+  /* Menu Icon */
+  .hamb{
+    cursor: pointer;
+    float: right;
+    padding: 20px 20px;
+  }
+  /* Style label tag */
+  .hamb-line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 20px;
+  }
+  /* Style span tag */
+  .hamb-line::before,
+  .hamb-line::after{
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .hamb-line::before{
+    top: 1px;
+  }
+  .hamb-line::after{
+    top: -1px;
+  }
+  .side-menu {
+    display: none;
+  } 
+  /* Hide checkbox */
+  
+  /* Toggle menu icon */
+  .side-menu:checked ~ nav{
+    max-height: 100%;
+  }
+  .side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+  }
+  
+  /* Responsiveness */
+  @media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+      }
+    .menu li{
+        float: left;
+      }
+    .menu a:hover{
+        background-color: transparent;
+        color: rgb(190, 190, 190);
+      }
+    .hamb{
+        display: none;
+      }
+  }
+  /* Sub nav 
+  .subnav-content {
+    background-color:  rgba(245, 245, 245, 0.205);
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0 ;
+    display: none;
+  }
+  .subnav-content a {
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .subnav:hover .subnav-content {
+    display: block;
+    overflow-x: scroll;
+  }
+  */
+  /*
+  @media (min-width: 768px) {
+    /* Sub nav 
+    .subnav-content {
+        padding: 20px 0 ;
+        display: none;
+        background-color:  var(--black);
+    }
+    .subnav-content a {
+        color: white;
+    }
+  }
+  */
+  
+  #content-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      
+  
+  
+      background-image: url(./docs/assetts/images/facesBlack.gif);
+      background-repeat: no-repeat;
+      background-attachment:scroll;
+      background-size: cover;
+  
+  
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 11pt;
+      font-weight:lighter;
+      line-height: 1.4;
+      word-spacing: 1.5pt;
+  
+     
+    }
+      #content-item1{
+        background-color: rgba(0, 0, 0, 0);
+        border:none;
+        margin: 1px;
+        text-align: center;
+        max-width: 100%;
+        margin-top: 1px;
+        
+      }
+  
+     
+      #content-item2{
+        background-color: rgba(0, 0, 0, 0);
+        text-align: center;
+        max-width: 100%;
+        min-width: auto;
+        margin-top: 1px;
+        margin-left: 1px;
+        margin-bottom: 1px;
+        margin-right: 1px;
+      }
+  
+      #content-item3{
+        background-color: rgba(0, 0, 0, 0);
+        border:none;
+        margin: 1px;
+        padding: 0%;
+        text-align: center;
+        max-width: 100%;
+      }
+      
+    #footer{
+      background-color: rgb(0, 0, 0);
+      text-align: center;
+      position: bottom;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight:lighter;
+      font-size:medium;
+      
+      
+      margin-left: 0%;
+      margin-right: 0%;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      margin-top: 1px;
+    }
+  
+  
