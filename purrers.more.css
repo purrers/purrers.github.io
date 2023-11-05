@@ -249,7 +249,7 @@ body{
       background-image: url(./docs/assetts/images/231015_AinsleaPics/BAND-WEB-2.jpg);
       background-repeat: no-repeat;
       background-attachment:scroll;
-      background-size: cover;
+      background-size: 100% 100%;
   
   
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
