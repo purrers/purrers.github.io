@@ -247,7 +247,7 @@ body{
   
   
       background-image: url(./docs/assetts/images/facesBlack.gif);
-      background-repeat: no-repeat;
+      background-repeat:repeat-y;
       background-attachment:scroll;
       background-size: 100%;
   
