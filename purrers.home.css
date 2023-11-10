@@ -201,6 +201,14 @@ ul{
   .hamb{
       display: none;
     }
+  .content-container {
+    background-image: url(./docs/assetts/images/facesBlack.gif);
+    background-repeat:repeat-y;
+    background-attachment:scroll;
+    background-size: 100%;
+    }
+
+    
 }
 /* Sub nav 
 .subnav-content {
