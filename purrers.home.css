@@ -202,7 +202,7 @@ ul{
       display: none;
     }
   .content-container {
-    background-image: url(./docs/assetts/images/facesBlack.gif);
+    background-image:none;
     background-repeat:repeat-y;
     background-attachment:scroll;
     background-size: 100%;
