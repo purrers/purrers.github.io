@@ -237,6 +237,18 @@ body{
   }
   */
   
+  div.scroll-container {
+    background-color: #000000;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 22px;
+    margin: 14px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
+
   #content-container{
       display: flex;
       flex-direction: column;
