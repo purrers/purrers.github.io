@@ -32,7 +32,7 @@ body{
   li {
   list-style: none;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color:  rgb(0, 0, 0);
   }
   
   a:link{
@@ -47,7 +47,7 @@ body{
     text-decoration: none;
   }
   a:hover {
-      color:rgb(38, 0, 126);
+      color:rgb(38, 0, 143);
       background-color: transparent;
       text-decoration:solid;
     }
@@ -90,9 +90,9 @@ body{
   
     display: inline-flex;
     height: 100%;
-    color: var(--white);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px #8b8b8b;
     font-weight: 700;
     font-size: 20pt;
     margin-left: 1px;
@@ -120,11 +120,10 @@ body{
     justify-content: center;
     height: 100%;
     padding: 1px;
-    color:rgb(16, 1, 48);
-  text-shadow: 1px 1px #8b8b8b;
+    color: rgb(0, 0, 0);
   }
   .menu a:hover{
-    background-color: rgba(42, 0, 109, 0.082);
+    background-color: rgb(38, 0, 143);
   }
   .nav{
     max-height: 0;
@@ -135,19 +134,21 @@ body{
     cursor: pointer;
     float: right;
     padding: 20px 20px;
+    
   }
   /* Style label tag */
   .hamb-line {
-    background: white;
+    background: transparent;
     display: block;
     height: 2px;
     position: relative;
     width: 20px;
   }
+
   /* Style span tag */
   .hamb-line::before,
   .hamb-line::after{
-    background: black;
+    background: #8b8b8b;
     content: '';
     display: block;
     height: 100%;
@@ -156,10 +157,10 @@ body{
     width: 100%;
   }
   .hamb-line::before{
-    top: 1px;
+    top: 5px;
   }
   .hamb-line::after{
-    top: -1px;
+    top: -5px;
   }
   .side-menu {
     display: none;
@@ -197,12 +198,13 @@ body{
       }
     .menu a:hover{
         background-color: transparent;
-        color: rgb(190, 190, 190);
+        color: rgb(38, 0, 143);
       }
     .hamb{
         display: none;
       }
   }
+  
   /* Sub nav 
   .subnav-content {
     background-color:  rgba(245, 245, 245, 0.205);

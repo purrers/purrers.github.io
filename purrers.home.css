@@ -123,7 +123,7 @@ ul{
   color: rgb(0, 0, 0);
 }
 .menu a:hover{
-  background-color: rgba(71, 71, 71, 0.082);
+  background-color: rgb(38, 0, 143);
 }
 .nav{
   max-height: 0;
@@ -134,19 +134,22 @@ ul{
   cursor: pointer;
   float: right;
   padding: 20px 20px;
+  
+  
 }
 /* Style label tag */
 .hamb-line {
-  background: white;
+  background: transparent;
   display: block;
   height: 2px;
   position: relative;
-  width: 20px;
+  width: 20px; 
 }
+
 /* Style span tag */
 .hamb-line::before,
 .hamb-line::after{
-  background: black;
+  background:#8b8b8b;
   content: '';
   display: block;
   height: 100%;
@@ -155,10 +158,11 @@ ul{
   width: 100%;
 }
 .hamb-line::before{
-  top: 1px;
+  top: 5px;
+ 
 }
 .hamb-line::after{
-  top: -1px;
+  top: -5px; 
 }
 .side-menu {
   display: none;
@@ -196,20 +200,15 @@ ul{
     }
   .menu a:hover{
       background-color: transparent;
-      color: rgb(0, 16, 70);
+      color: rgb(38, 0, 143);
     }
   .hamb{
       display: none;
     }
-  .content-container {
-    background-image:none;
-    background-repeat:repeat-y;
-    background-attachment:scroll;
-    background-size: 100%;
-    }
 
-    
-}
+  
+
+
 /* Sub nav 
 .subnav-content {
   background-color:  rgba(245, 245, 245, 0.205);
@@ -244,6 +243,15 @@ ul{
 }
 */
 
+.content-container {
+  background-image:none;
+  background-repeat:repeat-y;
+  background-attachment:scroll;
+  background-size: 100%;
+  }    
+}
+
+
 #content-container{
     display: flex;
     flex-direction: column;
@@ -254,8 +262,8 @@ ul{
    
 
 
-    background-image: url(./docs/assetts/images/231015_AinsleaPics/BAND-WEB-3.jpg);
-    background-repeat:repeat-y;
+   /* background-image: url(./docs/assetts/images/231015_AinsleaPics/BAND-WEB-3.jpg);
+    background-repeat:repeat-y;/*/
     background-attachment:scroll;
     background-size: 100%;
 
