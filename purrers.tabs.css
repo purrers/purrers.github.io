@@ -239,6 +239,24 @@ body{
   }
   */
   
+ /*SIDEBAR*/ 
+#sidebar {
+    display: block;
+    border: #8b8b8b;
+    border-radius: 4px;
+    position:fixed;
+    left: 0;
+    margin-top: 100px;
+    max-height: 100%;
+    overflow-y: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 20%;
+    text-align: left;
+    padding-left: 4px;
+   
+}
+
+
   div.scroll-container {
     background-color: #000000;
     overflow: auto;
@@ -266,8 +284,8 @@ body{
 
   
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 13pt;
-      font-weight:normal;
+      font-size: 11pt;
+      font-weight:lighter;
       line-height: 1.4;
       word-spacing: 1.5pt;
   
@@ -313,6 +331,7 @@ body{
         max-width: 100%;
       }
 
+      
 
     #footer{
       background-color: rgb(0, 0, 0);
