@@ -19,8 +19,9 @@ body{
     
   }
   hr{
-    width: 33%;
+    width: 270px;
   }
+
   h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(255, 255, 255);
@@ -252,7 +253,7 @@ body{
   
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 11pt;
-      font-weight:lighter;
+      font-weight:normal;
       line-height: 1.4;
       word-spacing: 1.5pt;
   
