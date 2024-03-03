@@ -302,8 +302,15 @@ body{
         padding: 0%;
         text-align: center;
         max-width: 100%;
+        
       }
       
+      
+#scrollcontainer {
+  max-width: 95%;
+}
+
+
       #content-item4{
         background-color: rgba(0, 0, 0, 0);
         border:none;
