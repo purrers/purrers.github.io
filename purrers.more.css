@@ -149,7 +149,7 @@ ul{
 /* Style span tag */
 .hamb-line::before,
 .hamb-line::after{
-  background: #8b8b8b;
+  background: #000000;
   content: '';
   display: block;
   height: 100%;
