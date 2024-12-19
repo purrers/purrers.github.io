@@ -1,10 +1,9 @@
 
 
 body{ 
-    background-color:rgb(10, 0, 22);
-    
-    color:rgb(255, 255, 255);
-    text-shadow: 1px 1px #130061;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    text-shadow: 0px 0px #130061;
     margin: 0;
     margin-right: 0px;
     margin-left: 0px;
@@ -14,7 +13,7 @@ body{
     Overflow-y:scroll;
   }
   #page{
-    background-color: rgba(0, 0, 0, 0); 
+    background-color: rgba(255, 255, 255, 0); 
    
     
   }
@@ -22,7 +21,7 @@ body{
     width: 270px;
   }
   h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:serif;
     color: rgb(255, 255, 255);
     font-size: 29pt;
     font-weight: bolder;
@@ -37,7 +36,7 @@ body{
   
   a:link{
   color:rgb(16, 1, 48);
-  text-shadow: 1px 1px #8b8b8b;
+  text-shadow: 0px 0px #8b8b8b;
   background-color: transparent;
   text-decoration: none;
   }
@@ -58,152 +57,154 @@ body{
       text-decoration:none;
     }
   
-  /*LogRocketTOPNAV*/
-  a{
-    text-decoration: none;
-    
-  }
-  ul{
-    list-style: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 20pt;
-    
-    
-  }
-  :root{
-    --white: #5a5a5a;
-    --black: #36383F;
-    --gray: #1d1d1d;
-  }
-  /* Header */
-  .header{
-    background-color:transparent;
-    position:fixed; 
-    top: 0;
-    width: 100%;
-    margin: 0%;
-   
-  }
-  /* Logo */
-  .logo{
+/*LogRocketTOPNAV*/
+a{
+  text-decoration: none;
   
-    display: inline-flex;
-    height: 100%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 1px #8b8b8b;
-    font-weight: 700;
-    font-size: 20pt;
-    margin-left: 1px;
-    padding: 1px;
-    
-  }
-  /* Nav menu */
-  .nav{
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height:fit-content;
-    position: relative;
-    background-color: black;
-    overflow: hidden;
-  }
-  .menu{
-    margin: 0%;
-    padding: 0%;
-  }
-  .menu a{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    padding: 1px;
-    color: rgb(0, 0, 0);
-  }
-  .menu a:hover{
-    background-color: rgb(38, 0, 143);
-  }
-  .nav{
-    max-height: 0;
-    transition: max-height .5s ease-out;
-  }
-  /* Menu Icon */
-  .hamb{
-    cursor: pointer;
-    float: right;
-    padding: 20px 20px;
-    
-  }
-  /* Style label tag */
-  .hamb-line {
-    background: transparent;
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 20px;
-  }
+}
+ul{
+  list-style: none;
+  font-family:sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+  
+  
+}
+:root{
+  --white: #5a5a5a;
+  --black: #36383F;
+  --gray: #1d1d1d;
+}
+/* Header */
+.header{
+  background-color:transparent;
+  /*position:fixed; */
+  /*top: 0;*/
+  /*width: 100%;*/
+  margin: 0%;
+ 
+}
+/* Logo */
+.logo{
 
-  /* Style span tag */
-  .hamb-line::before,
-  .hamb-line::after{
-    background: #8b8b8b;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-  .hamb-line::before{
-    top: 5px;
-  }
-  .hamb-line::after{
-    top: -5px;
-  }
-  .side-menu {
-    display: none;
-  } 
-  /* Hide checkbox */
+  display: flex;
+  height: 100%;
+  font-family:sans-serif;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px #8b8b8b;
+  font-weight: 700;
+  font-size: 20pt;
+  margin-left: 1px;
+  padding: 1px;
+  justify-content: right;
   
-  /* Toggle menu icon */
-  .side-menu:checked ~ nav{
-    max-height: 100%;
-  }
-  .side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-  }
-  .side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-  }
-  .side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
-  }
-  
-  /* Responsiveness */
-  @media (min-width: 768px) {
-    .nav{
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-        background-color: transparent;
-      }
-    .menu li{
-        float: left;
-      }
-    .menu a:hover{
-        background-color: transparent;
-        color: rgb(38, 0, 143);
-      }
-    .hamb{
-        display: none;
-      }
-  }
+}
+
+
+/* Nav menu */
+.nav{
+  display:flex;
+  flex: 1 1 auto;
+  justify-content: left;
+  align-content: center;
+  width: 100%;
+  height:fit-content;
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+.menu{
+  margin: 0%;
+  padding: 0%;
+}
+.menu a{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 1px;
+  color: rgb(0, 0, 0);
+}
+.menu a:hover{
+  background-color: rgb(38, 0, 143);
+}
+.nav{
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+/* Menu Icon */
+.hamb{
+  cursor: pointer;
+  float: left;
+  padding: 20px 20px;
+}
+/* Style label tag */
+.hamb-line {
+  background: transparent;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 20px;
+}
+
+/* Style span tag */
+.hamb-line::before,
+.hamb-line::after{
+  background: #8b8b8b;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamb-line::before{
+  top: 5px;
+}
+.hamb-line::after{
+  top: -5px;
+}
+.side-menu {
+  display: none;
+} 
+/* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+  .nav{
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      background-color: transparent;
+    }
+  .menu li{
+      float: right;
+    }
+  .menu a:hover{
+      background-color: transparent;
+      color: rgb(38, 0, 143);
+    }
+  .hamb{
+      display: none;
+    }
+}
   
   /* Sub nav 
   .subnav-content {
@@ -252,36 +253,31 @@ body{
   }
 
   #content-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    max-width: 100%;
+    background-image:none;
+    background-repeat:repeat-y;
+    background-attachment:scroll;
+    background-size: 100%;
+    font-family:serif;
+    font-size: 11pt;
+    font-weight:normal;
+    margin-left: 4px;
+   
+  }
+    #content-item1{
+      background-color: rgba(0, 0, 0, 0);
+      border:none;
+      margin: 1px;
+      text-align: left;
       max-width: 100%;
+      margin-top: 1px;
+      display: block;
       
-  
-      background-image:none;
-      background-repeat:repeat-y;
-      background-attachment:scroll;
-      background-size: 100%;
-
-  
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 12pt;
-      font-weight:normal;
-      line-height: 1.4;
-      word-spacing: 1.5pt;
-  
-     
     }
-      #content-item1{
-        background-color: rgba(0, 0, 0, 0);
-        border:none;
-        margin: 1px;
-        text-align: center;
-        max-width: 100%;
-        margin-top: 1px;
-        
-      }
   
      
       #content-item2{
@@ -312,7 +308,7 @@ body{
 
 
       #content-item4{
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(255, 255, 255, 0);
         border:none;
         margin: 1px;
         padding: 0%;
@@ -321,20 +317,22 @@ body{
       }
 
 
-    #footer{
-      background-color: rgb(0, 0, 0);
-      text-align: center;
-      position: bottom;
-      font-family:Arial, Helvetica, sans-serif;
-      font-weight:lighter;
-      font-size:medium;
-      
-      
-      margin-left: 0%;
-      margin-right: 0%;
-      padding-top: 1px;
-      padding-bottom: 1px;
-      margin-top: 1px;
-    }
-  
+      #footer{
+        background-color: rgb(255, 255, 255);
+        
+        text-align:center;
+        position: bottom;
+        font-family: sans-serif;
+        font-weight:lighter;
+        font-size:medium;
+        
+        
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-top: 1px;
+      }
+    
+    
   
