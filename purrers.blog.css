@@ -36,13 +36,13 @@ color:  rgb(0, 0, 0);
 }
 
 a:link{
-color:rgb(49, 0, 154);
+color:rgb(blue);
 text-shadow: 0px 0px #8b8b8b;
 background-color: transparent;
 text-decoration: none;
 }
 a:visited {
-  color: rgb(0, 0, 0);
+  color: rgb(blue);
   background-color: transparent;
   text-decoration: none;
 }
