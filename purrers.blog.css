@@ -240,6 +240,20 @@ ul{
   }
   */
   
+
+  div.scroll-container {
+    background-color: #ffffff;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 22px;
+    margin: 14px;
+  }
+  
+  div.scroll-container img {
+    padding: 1px;
+  }
+
+
   #content-container{
     display: flex;
     flex-direction: column;
@@ -302,6 +316,10 @@ ul{
         min-width: auto;
         overflow: hidden;
         
+      }
+
+      #scrollcontainer {
+        max-width: 99%;
       }
       
       #footer{
